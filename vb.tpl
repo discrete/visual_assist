@@ -34,7 +34,6 @@ a:File header::
 '	purpose:	$end$
 '*************************************************************************
 
-
 readme:
 VA Snippet used for suggestions in class definitions.
 Delete this item to restore the default upon next use.
@@ -44,7 +43,6 @@ Public
 Private
 Protected
 
-
 readme:
 VA Snippet used for suggestions of type Boolean.
 Delete this item to restore the default upon next use.
@@ -52,7 +50,6 @@ Delete this item to restore the default upon next use.
 a:SuggestionsForType Boolean::
 True
 False
-
 
 readme:
 VA Snippet used for refactoring.
@@ -62,7 +59,6 @@ a:Refactor Create Implementation::
 $SymbolPrivileges$ Sub $SymbolName$( $ParameterList$ )
 	$end$$MethodBody$
 End Sub
-
 
 readme:
 VA Snippet used for refactoring.
@@ -78,7 +74,6 @@ a:Refactor Document Method::
 ' Parameter: $MethodArg$
 '//////////////////////////////////////////////////
 
-
 readme:
 VA Snippet used for refactoring.
 Delete this item to restore the default upon next use.
@@ -93,7 +88,6 @@ a:Refactor Encapsulate Field::
 		End Set
 	End Property
 
-
 readme:
 VA Snippet used for refactoring.
 Delete this item to restore the default upon next use.
@@ -104,7 +98,6 @@ $end$$SymbolPrivileges$ Sub $SymbolName$( $ParameterList$ )
 	$MethodBody$
 End Sub
 
-
 readme:
 VA Snippet used by Surround With #region.
 Delete this item to restore the default upon next use.
@@ -113,7 +106,6 @@ a:#region (VA X):#r:
 #Region "$end$"
 $selected$
 #End Region
-
 
 readme:
 Delete this item to restore the default when the IDE starts.

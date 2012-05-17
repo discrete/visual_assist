@@ -157,7 +157,6 @@ a:File header detailed::
 	purpose:	$end$
 *********************************************************************/
 
-
 readme:
 VA Snippet used for suggestions in loops.
 Delete this item to restore the default upon next use.
@@ -165,7 +164,6 @@ Delete this item to restore the default upon next use.
 a:SuggestionsForType loop::
 continue;
 break;
-
 
 readme:
 VA Snippet used for suggestions in switch statements.
@@ -175,7 +173,6 @@ a:SuggestionsForType switch::
 case
 default:
 break;
-
 
 readme:
 VA Snippet used for suggestions in class definitions.
@@ -193,7 +190,6 @@ static
 override
 internal
 
-
 readme:
 VA Snippet used for suggestions of type bool.
 Delete this item to restore the default upon next use.
@@ -202,7 +198,6 @@ a:SuggestionsForType bool::
 true
 false
 
-
 readme:
 VA Snippet used for suggestions of type Boolean.
 Delete this item to restore the default upon next use.
@@ -210,7 +205,6 @@ Delete this item to restore the default upon next use.
 a:SuggestionsForType Boolean::
 true
 false
-
 
 readme:
 VA Snippet used for refactoring: Change Signature, Create Implementation, and Move Implementation to Source File.
@@ -221,7 +215,6 @@ $SymbolPrivileges$ $SymbolType$ $SymbolName$( $ParameterList$ )
 {
 	$end$$MethodBody$
 }
-
 
 readme:
 VA Snippet used for refactoring.
@@ -234,7 +227,6 @@ a:Refactor Document Method::
 /// <param name="$MethodArgName$"></param>
 /// <returns></returns>
 
-
 readme:
 VA Snippet used for refactoring.
 Delete this item to restore the default upon next use.
@@ -245,7 +237,6 @@ a:Refactor Encapsulate Field::
 		get { return $SymbolName$; }
 		set { $SymbolName$ = value; }
 	}
-
 
 readme:
 VA Snippet used for refactoring.
@@ -258,14 +249,12 @@ $end$$SymbolPrivileges$ $SymbolType$ $SymbolContext$( $ParameterList$ )
 	$MethodBody$
 }
 
-
 readme:
 VA Snippet used for refactoring: Create From Usage and Implement Interface.
 Delete this item to restore the default upon next use.
 
 a:Refactor Create From Usage Method Body::
 throw new Exception("The method or operation is not implemented.");
-
 readme:
 VA Snippet used by Surround With #region.
 Delete this item to restore the default upon next use.
@@ -275,7 +264,6 @@ a:#region (VA X):#r:
 $selected$
 #endregion
 
-
 readme:
 Delete this item to restore the default when the IDE starts.
 
@@ -283,7 +271,6 @@ a:{...}::
 {
 	$end$$selected$
 }
-
 
 readme:
 Delete this item to restore the default when the IDE starts.

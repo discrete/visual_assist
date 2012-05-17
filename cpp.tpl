@@ -1,3 +1,38 @@
+readme:
+How to use
+Copy a Object name
+insert snippet from menu
+
+a:BREW_Handler::
+
+boolean $clipboard$_$handler=EventHandler$($clipboard$ *self, AEEEvent evt, uint16 wParam, uint32 dwParam)
+{
+	boolean bHandled;
+	bHandled = FALSE;
+
+	bHandled = HANDLERDESC_CALL(&self->hd, evt, wParam, dwParam);
+	if (bHandled == TRUE) {
+		return TRUE;
+	}
+
+	return bHandled;
+}
+
+readme:
+A normal method
+How to use:
+copy a class name
+insert snippet
+
+a:BREW method::
+int $clipboard$_$method_name$($clipboard$ *self, $end$)
+{
+	int nErr;
+	nErr = EFAILED;
+
+	return nErr;
+}
+
 a::#d:
 #define 
 a::#u:
@@ -31,7 +66,7 @@ a::#en:
 a::A:
 ASSERT($end$)
 a::b:
-bool
+boolean
 a::DW:
 DWORD
 a::r:
@@ -121,8 +156,7 @@ private:
 
 a:dynamic cast, run code on valid cast:dyna:
 $New_type$ *$New_pointer$ = dynamic_cast<$New_type$ *>($Cast_this$);
-if (NULL != $New_pointer$)
-{
+if (NULL != $New_pointer$) {
 	$end$
 }
 
@@ -132,14 +166,12 @@ struct $end$
 };
 
 a::switch:
-switch ($end$)
-{
+switch ($end$) {
 	$selected$
 }
 
 a::switch:
-switch ($end$)
-{
+switch ($end$) {
 case :
 	break;
 }
@@ -164,82 +196,66 @@ _T($selected$)$end$
 a:_T():tc:
 _T($end$)
 a:if () { ... }:if:
-if ($end$)
-{
+if ($end$) {
 	$selected$
 }
 
 a:if () { ... } else { }:if:
-if ($end$)
-{
+if ($end$) {
 	$selected$
 } 
-else
-{
+else {
 }
 
 a:if () { } else { ... }::
-if ($end$)
-{
+if ($end$) {
 } 
-else
-{
+else {
 	$selected$
 }
 
 a:while () { ... }:while:
-while ($end$)
-{
+while ($end$) {
 	$selected$
 }
 
 a:for () { ... }:for:
-for ($end$)
-{
+for ($end$) {
 	$selected$
 }
 
 a:for loop forward:forr:
-for (int $Index$ = 0; $Index$ < $Length$ ; $Index$++)
-{
+for (int $Index$ = 0; $Index$ < $Length$ ; $Index$++) {
 	$end$
 }
 
 a:for loop reverse:forr:
-for (int $Index$ = $Length$ - 1; $Index$ >= 0 ; $Index$--)
-{
+for (int $Index$ = $Length$ - 1; $Index$ >= 0 ; $Index$--) {
 	$end$
 }
 
 a:do { ... } while ():do:
-do 
-{
+do {
 	$selected$
 } while ($end$);
 
 a:try { ... } catch {} catch {} catch {}:try:
-try
-{
+try {
 	$selected$
 }
-catch (CMemoryException* e)
-{
+catch (CMemoryException* e) {
 	$end$
 }
-catch (CFileException* e)
-{
+catch (CFileException* e) {
 }
-catch (CException* e)
-{
+catch (CException* e) {
 }
 
 a:TRY { ... } CATCH {}:TRY:
-TRY 
-{
+TRY {
 	$selected$
 }
-CATCH (CMemoryException, e)
-{
+CATCH (CMemoryException, e) {
 	$end$
 }
 END_CATCH
@@ -347,8 +363,7 @@ LRESULT CALLBACK WndProc (HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 a:Dialog procedure::
 BOOL CALLBACK $end$ (HWND hDlg, UINT message, WPARAM wParam, LPARAM lParam)
 {
-	switch(message)
-	{
+	switch(message)	{
 	case WM_INITDIALOG:
         {
 			
@@ -401,7 +416,6 @@ LRESULT CALLBACK $end$ (HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
     return DefWindowProc (hwnd, message, wParam, lParam);
 }
 
-
 readme:
 VA Snippet used for suggestions in loops.
 Delete this item to restore the default upon next use.
@@ -409,7 +423,6 @@ Delete this item to restore the default upon next use.
 a:SuggestionsForType loop::
 continue;
 break;
-
 
 readme:
 VA Snippet used for suggestions in switch statements.
@@ -419,7 +432,6 @@ a:SuggestionsForType switch::
 case 
 default:
 break;
-
 
 readme:
 VA Snippet used for suggestions in class definitions.
@@ -436,7 +448,6 @@ string
 static
 const
 
-
 readme:
 VA Snippet used for suggestions of type bool.
 Delete this item to restore the default upon next use.
@@ -444,7 +455,6 @@ Delete this item to restore the default upon next use.
 a:SuggestionsForType bool::
 true
 false
-
 
 readme:
 VA Snippet used for suggestions of type BOOL.
@@ -454,7 +464,6 @@ a:SuggestionsForType BOOL::
 TRUE
 FALSE
 
-
 readme:
 VA Snippet used for suggestions of type HRESULT.
 Delete this item to restore the default upon next use.
@@ -462,7 +471,6 @@ Delete this item to restore the default upon next use.
 a:SuggestionsForType HRESULT::
 S_OK
 S_FALSE
-
 
 readme:
 VA Snippet used for suggestions of type VARIANT_BOOL.
@@ -472,6 +480,20 @@ a:SuggestionsForType VARIANT_BOOL::
 VARIANT_TRUE
 VARIANT_FALSE
 
+readme:
+BREW EventHandler
+
+a:SuggestionsForType AEEEvent::
+EVT_WDG_SETFOCUS
+EVT_WDG_CANTAKEFOCUS
+EVT_WDG_HASFOCUS
+EVT_KEY_PRESS
+EVT_KEY
+EVT_KEY_RELEASE
+EVT_POINTER_DOWN
+EVT_POINTER_MOVE
+EVT_POINTER_STALE_MOVE
+EVT_POINTER_UP
 
 readme:
 VA Snippet used for suggestions of type HANDLE.
@@ -480,7 +502,6 @@ Delete this item to restore the default upon next use.
 a:SuggestionsForType HANDLE::
 INVALID_HANDLE_VALUE
 NULL
-
 
 readme:
 VA Snippet used for refactoring: Change Signature, Create Implementation, and Move Implementation to Source File.
@@ -493,7 +514,6 @@ $SymbolType$ $SymbolContext$( $ParameterList$ ) $MethodQualifier$
 	$end$$MethodBody$
 }
 
-
 
 readme:
 VA Snippet used for refactoring.
@@ -509,7 +529,6 @@ a:Refactor Document Method::
 // Parameter: $MethodArg$
 //************************************
 
-
 readme:
 VA Snippet used for refactoring.
 Delete this item to restore the default upon next use.
@@ -518,19 +537,17 @@ a:Refactor Encapsulate Field::
 	$end$$SymbolType$ $GeneratedPropertyName$() const { return $SymbolName$; }
 	void $GeneratedPropertyName$($SymbolType$ val) { $SymbolName$ = val; }
 
-
 readme:
 VA Snippet used for refactoring.
 Delete this item to restore the default upon next use.
 
 a:Refactor Extract Method::
 
-$end$$SymbolType$ $SymbolContext$( $ParameterList$ ) $MethodQualifier$
+$end$$SymbolType$ $SymbolContext$($ParameterList$) $MethodQualifier$
 {
 	$MethodBody$
 }
 
-
 
 readme:
 VA Snippet used for refactoring: Create From Usage and Implement Interface.
@@ -538,7 +555,6 @@ Delete this item to restore the default upon next use.
 
 a:Refactor Create From Usage Method Body::
 throw std::exception("The method or operation is not implemented.");
-
 readme:
 VA Snippet used by Surround With #ifdef.
 Delete this item to restore the default upon next use.
@@ -547,7 +563,6 @@ a:#ifdef (VA X):#if:
 #ifdef $condition=_DEBUG$$end$
 $selected$
 #endif // $condition$
-
 
 readme:
 VA Snippet used by Surround With #region.
@@ -558,7 +573,6 @@ a:#region (VA X):#r:
 $selected$
 #pragma endregion $regionName$
 
-
 readme:
 Delete this item to restore the default when the IDE starts.
 
@@ -566,7 +580,6 @@ a:{...}::
 {
 	$end$$selected$
 }
-
 
 readme:
 Delete this item to restore the default when the IDE starts.
